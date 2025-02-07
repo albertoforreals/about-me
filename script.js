@@ -1,4 +1,1 @@
-	setInterval(function() {
-            let randomAngle = Math.floor(Math.random() * 360);
-            document.body.style.background = `linear-gradient(${randomAngle}deg, black, white)`;
-        }, 2000);
+useless like most of the things in life
