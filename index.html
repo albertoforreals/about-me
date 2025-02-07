@@ -1,14 +1,56 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Alberto</title>
-    <link rel="stylesheet" href="styles.css">
-    <p1> I love Science, coding, and I never take anything serious</p1>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   Cool Background Page
+  </title>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="noindex, nofollow" name="robots"/></head>
 <body>
-    <canvas id="interactive-bg"></canvas>
-    <script src="script.js"></script>
+<h1>
+   Active Changing Background
+  </h1>
 </body>
 </html>
+
+
+<style>
+    body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, black, white);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: background 1s;
+        }
+</style>
+
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+<script>
+    (function() {
+        window.onload = function() {
+            parent.iframeLoaded();
+        }
+    })();
+    try {
+    setInterval(function() {
+            let randomAngle = Math.floor(Math.random() * 360);
+            document.body.style.background = `linear-gradient(${randomAngle}deg, black, white)`;
+        }, 2000);
+    } catch (e) {
+        console.log("Error in JS code", e);
+    }
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</html>
+    
